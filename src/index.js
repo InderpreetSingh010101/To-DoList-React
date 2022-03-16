@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Header from './MyComponets/Header';
+import { Footer } from './MyComponets/Footer';
+import { TodoItem } from './MyComponets/TodoItem';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header title ="My Todo List" />
+    <App/>
+    {/* <TodoItem/> */}
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
